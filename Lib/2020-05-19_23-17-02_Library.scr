@@ -1,0 +1,99 @@
+# Created by Ultra Librarian Gold 8.3.219 Copyright © 1999-2018
+# Frank Frank, Accelerated Designs
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'CONN_00010C4LF_AMP.pac';
+Layer 1;
+Smd '1' 30 94 -0 R0 (-100 -76.7717);
+Layer 1;
+Smd '2' 30 94 -0 R0 (-100 76.7717);
+Layer 1;
+Smd '3' 30 94 -0 R0 (-50 -76.7717);
+Layer 1;
+Smd '4' 30 94 -0 R0 (-50 76.7717);
+Layer 1;
+Smd '5' 30 94 -0 R0 (0 -76.7717);
+Layer 1;
+Smd '6' 30 94 -0 R0 (0 76.7717);
+Layer 1;
+Smd '7' 30 94 -0 R0 (50 -76.7717);
+Layer 1;
+Smd '8' 30 94 -0 R0 (50 76.7717);
+Layer 1;
+Smd '9' 30 94 -0 R0 (100 -76.7717);
+Layer 1;
+Smd '10' 30 94 -0 R0 (100 76.7717);
+Layer 48;
+Layer 21;
+Wire 6 (130 -72) (130 72);
+Wire 6 (-130 72) (-130 -72);
+Wire 20 (-140 -77) -180 (-170 -77);
+Wire 20 (-170 -77) -180 (-140 -77);
+Change Size 50;
+Change Ratio 6;
+Text '>Value' SR0 (-68 -25);
+Layer 51;
+Wire 6 (-125 -67) (125 -67);
+Wire 6 (125 -67) (125 67);
+Wire 6 (125 67) (-125 67);
+Wire 6 (-125 67) (-125 -67);
+Wire 20 (-85 -152) -180 (-115 -152);
+Wire 20 (-115 -152) -180 (-85 -152);
+Layer 48;
+Layer 25;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (-129 -25);
+Layer 27;
+
+Edit '20021121-00010C4LF.sym';
+Layer 94;
+Pin '2' Pas None Middle R0 Both 0 (100 0)
+Pin '3' Pas None Middle R0 Both 0 (100 -100)
+Pin '4' Pas None Middle R0 Both 0 (100 -200)
+Pin '5' Pas None Middle R0 Both 0 (100 -300)
+Pin '6' Pas None Middle R0 Both 0 (100 -400)
+Pin '7' Pas None Middle R0 Both 0 (100 -500)
+Pin '8' Pas None Middle R0 Both 0 (100 -600)
+Pin '9' Pas None Middle R0 Both 0 (100 -700)
+Pin '1' Pas None Middle R180 Both 0 (1500 0)
+Pin '10' Pas None Middle R180 Both 0 (1500 -100)
+Wire 6 (300 300) (300 -900);
+Wire 6 (300 -900) (1300 -900);
+Wire 6 (1300 -900) (1300 300);
+Wire 6 (1300 300) (300 300);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 6;
+Text '>Name' SR0 (614 459);
+Layer 96;
+Change Size 82;
+Change Ratio 6;
+Text '>Value' SR0 (589 359);
+
+Edit '20021121-00010C4LF.dev';
+Prefix 'J';
+Description '';
+Value Off;
+Add 20021121-00010C4LF 'A' Next  0 (0 0);
+Package 'CONN_00010C4LF_AMP';
+Technology '';
+Attribute Built_By 'EMA_Matt';
+Attribute Copyright 'Copyright (C) 2018 Accelerated Designs. All rights reserved';
+Attribute Vendor 'Amphenol';
+Attribute Manufacturer_Part_Number '20021121-00010C4LF';
+Attribute SourceLibrary 'Amphenol_2019-10-30';
+Connect 'A.1' '1';
+Connect 'A.2' '2';
+Connect 'A.3' '3';
+Connect 'A.4' '4';
+Connect 'A.5' '5';
+Connect 'A.6' '6';
+Connect 'A.7' '7';
+Connect 'A.8' '8';
+Connect 'A.9' '9';
+Connect 'A.10' '10';

@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-05-21T19:00:15Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.4.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "Remote"
+        },
+        "Owner": "Pratik Sinai Kunkolienker <pratikkunkolienkar@gmail.com>",
+        "Size": {
+            "X": 38.4048,
+            "Y": 139.7762
+        }
+    }
+}
