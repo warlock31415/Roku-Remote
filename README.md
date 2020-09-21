@@ -13,3 +13,11 @@ The HAL does not have a microsecond delay so a timer was used. ST's Cube IDE mak
 
 ## PCB
 The PCB was made in Eagle and manufactured by JLCPCB. All components were hand soldered. Including, the STM32L052K8T. The blue silk screen on the PCBs look pretty good. 
+
+## Shortcomings
+- The SMD IR transmitter that was spec'd for the project didn't seem to work properly. So a THT transmitter, was was used to test the breadboard prototype, was soldered in its place. Some wire bodging was needed to accomplish this.
+- The battery protection circuitry was not correctly wired up (Some kind of issue with Battery GND vs system GND).
+
+## TO DO
+- Redo board to eliminate wire bodges.
+- Make a case for the board.
