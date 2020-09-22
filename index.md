@@ -8,23 +8,7 @@ theme: default
 My roomate keeps loosing the remote to the TV. So I made a spare remote to work with our TV and simulates the same behaviour as the original remote. The remote can also work via micro USB as well as a Lithium polymer battery. This project was my first forray into ARM microcontrollers and ST's Hardware Abstraction Layer (HAL).  
 
 ## Recording button codes
-The Roku remote work on a IR signal and the data is modulated on the 37 kHz signal. The NEC protocol decription can be found [here](https://techdocs.altium.com/display/FPGA/NEC+Infrared+Transmission+Protocol) . A Analog Discovery along with the TSOP382 (IR receiver) was used to record the signal. The receiver demodulates the signal internally and only ouputs the data bits. Each button was pressed and the corresponding code was recorded. It was noted that each button had 2 codes associated with it. The first one was transmitted when the button was pressed and the second was transmitted when the button was held down. Only the last 4 bytes of the codes are shown here as the first 4 bytes are always the same (0x57E3).
-
-The recorded button codes are as follows:
-| Button | Code in HEX |  Last 4 bytes of the held down code|
-|--------|-------------| ----------|
-| Power  | 0x57E3E817 | 0x57E3E916 | 
-| Back   | 0x57E36699 | 0x57E36798 |
-| Home   | 0xCO3F | 0xC13E |
-| ↑      | 0x9867 | 0x9966 |
-| →      | 0xB44B | 0xB54A |
-| ↓      | 0xCC33 | 0xCD32 |
-| ←      | 0x7887 | 0x7986 |
-| OK     | 0x54AB | 0x55AA |
-| V+     | 0xF00F | 0xF10E |
-| V-     | 0x08F7 | 0x09F6 |
-| Mute   | 0x04FB | 0x05FA |
-
+The Roku remote work on a IR signal and the data is modulated on the 37 kHz signal. The NEC protocol decription can be found [here](https://techdocs.altium.com/display/FPGA/NEC+Infrared+Transmission+Protocol) . A Analog Discovery along with the TSOP382 (IR receiver) was used to record the signal. The receiver demodulates the signal internally and only ouputs the data bits. Each button was pressed and the corresponding code was recorded. It was noted that each button had 2 codes associated with it. The first one was transmitted when the button was pressed and the second was transmitted when the button was held down. 
 
 ## The code
 ST's Nucleo-F401RE(497-14360-ND) was used to build the remote on a breadboard. Although, a STM32L052K8T was actually used in the final prototype due to its lower power consumption as compared to the STM32F401RE.
