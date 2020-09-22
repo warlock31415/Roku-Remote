@@ -1,0 +1,4 @@
+Remote.c:10:6:delay_us	16	static
+Remote.c:18:6:sendStart	8	static
+Remote.c:33:6:sendData	24	static
+Remote.c:63:6:sendStop	8	static
