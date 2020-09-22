@@ -40,6 +40,7 @@ ST's Cube IDE makes it very easy to set up and use timers graphically. To genera
 Each button code consists of 3 sections. The start code, specific button code and the end code. This can be seen in Table 1.
 ## PCB
 The PCB was made in Eagle and manufactured by JLCPCB. All components were hand soldered. Including, the STM32L052K8T. The blue silk screen on the PCBs look pretty good. 
+![PCB Image](./Hardware/IMG_20200626_161731.jpg)
 
 ## Shortcomings
 - The SMD IR transmitter that was spec'd for the project didn't seem to work properly. So a THT transmitter, was was used to test the breadboard prototype, was soldered in its place. Some wire bodging was needed to accomplish this.
