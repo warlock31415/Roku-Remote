@@ -35,7 +35,7 @@ void delay_us(uint16_t time)
 	while(TIM6->CR1 & 1);	// Wait for timer to elapse
 }
 ```
-ST's Cube IDE makes it very easy to set up and use timers graphically. To generate the carrier another 16-bit advanced timer was used in PWM mode. The STM32F401RE has 16-bit prescale register which allows just about any frequency. This, combined with the Auto-Prelor Register, one can generate just about any frequency signal with any duty cycle. So a 37kHz carrier with a 30% duty cycle, for efficiency, was generated. This Precale and AR registers are especially more advatageous to an ATMEGA328P which only has a couple of prescalers to choose from and the "auto reload register" is the only way to control frequency. And hence duty cycle cannot be controlled in the same way.
+ST's Cube IDE makes it very easy to set up and use timers graphically. To generate the carrier another 16-bit advanced timer was used in PWM mode. The STM32F401RE has 16-bit prescale register which allows just about any frequency. This, combined with the Auto-Preload Register, one can generate just about any frequency signal with any duty cycle. So a 37kHz carrier with a 30% duty cycle, for efficiency, was generated. This Prescale and AR registers are especially more advatageous to an ATMEGA328P which only has a couple of prescalers to choose from and the "auto reload register" is the only way to control frequency. And hence duty cycle cannot be controlled in the same way.
 
 Each button code consists of 3 sections. The start code, specific button code and the end code. This can be seen in Table 1.
 ## PCB
